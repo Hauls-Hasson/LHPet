@@ -29,6 +29,8 @@ listaClientes.Add(cliente3);
 listaClientes.Add(cliente4);
 listaClientes.Add(cliente5);
 
+ViewBag.listaClientes = listaClientes;
+
 Fornecedor fornecedor1 = new Fornecedor(01, "C#PET S/A", "14.182.102/0001-80", "c-sharp@pet.org");
 Fornecedor fornecedor2 = new Fornecedor(02, "CtrlAlt Dog", "15.836.698/0001-57", "ctrl@alt.dog.br");
 Fornecedor fornecedor3 = new Fornecedor(03, "BootsPet INC", "40.810.224/0001-83", "boots.pet@gatomania.us");
@@ -41,6 +43,8 @@ listaFornecedores.Add(fornecedor2);
 listaFornecedores.Add(fornecedor3);
 listaFornecedores.Add(fornecedor4);
 listaFornecedores.Add(fornecedor5);
+
+ViewBag.listaFornecedores = listaFornecedores;
 
         return View();
     }
